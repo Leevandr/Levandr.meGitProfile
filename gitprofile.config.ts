@@ -91,7 +91,7 @@ const CONFIG = {
   ],
   // Display articles from your medium or dev account. (Optional)
   themeConfig: {
-    defaultTheme: 'dark',
+    defaultTheme: 'dracula',
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode
