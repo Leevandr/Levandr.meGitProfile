@@ -19,7 +19,7 @@ const CONFIG = {
         sortBy: 'updated', // Sort projects by 'stars' or 'updated'
         limit: 0, // How many projects to display.
         exclude: {
-          forks: false, // Forked projects will not be displayed if set to true.
+          forks: true, // Forked projects will not be displayed if set to true.
           projects: [], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
         },
       },
@@ -28,6 +28,7 @@ const CONFIG = {
         projects: [
           'Leevandr/CustomLinkedListImplementation',
           'Leevandr/java-exercise',
+          'Leevandr/CustomLinkedListImplementation',
         ], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
       },
     },
