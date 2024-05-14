@@ -1,3 +1,4 @@
+import React from 'react';
 import { FALLBACK_IMAGE } from '../../constants';
 import { Profile } from '../../interfaces/profile';
 import { skeleton } from '../../utils';
@@ -46,17 +47,15 @@ const AvatarCard: React.FC<AvatarCardProps> = ({
                   : ''
               }`}
             >
-              {
-                <LazyImage
-                  src={profile.avatar ? profile.avatar : FALLBACK_IMAGE}
-                  alt={profile.name}
-                  placeholder={skeleton({
-                    widthCls: 'w-full',
-                    heightCls: 'h-full',
-                    shape: '',
-                  })}
-                />
-              }
+              <LazyImage
+                src={profile.avatar ? profile.avatar : FALLBACK_IMAGE}
+                alt={profile.name}
+                placeholder={skeleton({
+                  widthCls: 'w-full',
+                  heightCls: 'h-full',
+                  shape: '',
+                })}
+              />
             </div>
           </div>
         )}

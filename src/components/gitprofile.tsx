@@ -30,12 +30,6 @@ import ExternalProjectCard from './external-project-card';
 import BlogCard from './blog-card';
 import Footer from './footer';
 
-/**
- * Renders the GitProfile component.
- *
- * @param {Object} config - the configuration object
- * @return {JSX.Element} the rendered GitProfile component
- */
 const GitProfile = ({ config }: { config: Config }) => {
   const [sanitizedConfig] = useState<SanitizedConfig | Record<string, never>>(
     getSanitizedConfig(config),
@@ -209,7 +203,7 @@ const GitProfile = ({ config }: { config: Config }) => {
                       profile={profile}
                       loading={loading}
                       avatarRing={sanitizedConfig.themeConfig.displayAvatarRing}
-                      resumeFileUrl={sanitizedConfig.resume.fileUrl}
+                      resumeFileUrl={sanitizedConfig.resume.fileUrl} // Передаем resumeFileUrl сюда
                     />
                     <DetailsCard
                       profile={profile}
