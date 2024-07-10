@@ -160,7 +160,7 @@ const CONFIG = {
       class="text-primary" href="https://github.com/Leevandr"
       target="_blank"
       rel="noreferrer"
-    >GitProfile</a> and ❤️`,
+    >GitProfile</a>`,
 
   enablePWA: true,
 };
